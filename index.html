@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO DE ALUNOS</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        .formulario {
+
+
+            width: 300px;
+        }
+        .deletar {
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+
+
+<body>
+    <form class="formulario" action="crud.php" method="post">
+        <table align="center" border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>Matrícula:</td>
+                <td>
+                    <input type="text" name="matricula" id="matricula" size="5">
+                    <button type="submit" name="listar">PESQUISAR</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Nome:</td>
+                <td> <input type="text" name="nome" id="nome"> </td>
+            </tr>
+            <tr>
+                <td>Curso:</td>
+                <td> <input type="text" name="curso" id="curso"> </td>
+            </tr>
+            <tr>
+                <td>Idade:</td>
+                <td> <input type="text" name="idade" id="idade"> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="center">
+               <button type="submit" name="inserir">INSERIR</button>
+
+
+               <button class="submit" type="button" name="deletar">DELETAR</button>
+
+
+               <button type="submit" name="alterar"> ALTERAR </button>
+             </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
